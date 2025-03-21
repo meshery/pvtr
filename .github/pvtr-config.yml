@@ -1,0 +1,54 @@
+vars:
+  token: {{ GH_ACCESS_TOKEN }} # GH classic token with all repo: read permissions
+  owner: meshery
+
+policy:
+  catalogs:
+    - OSPS_B
+  applicability:
+    - Maturity Level 1
+    - Maturity Level 2
+    - Maturity Level 3
+
+write-directory: evaluation_results
+services:
+  meshery:
+    plugin: github-repo
+    vars:
+      repo: meshery
+  meshery-kuma:
+    plugin: github-repo
+    vars:
+      repo: meshery-kuma
+  meshery-linkerd:
+    plugin: github-repo
+    vars:
+      repo: meshery-linkerd
+  meshery.io:
+    plugin: github-repo
+    vars:
+      repo: meshery.io
+  schemas:
+    plugin: github-repo
+    vars:
+      repo: schemas
+  meshery-consul:
+    plugin: github-repo
+    vars:
+      repo: meshery-consul
+  meshkit:
+    plugin: github-repo
+    vars:
+      repo: meshkit
+  helm-kanvas-snapshot:
+    plugin: github-repo
+    vars:
+      repo: helm-kanvas-snapshot
+  meshsync:
+    plugin: github-repo
+    vars:
+      repo: meshsync
+  meshery-operator:
+    plugin: github-repo
+    vars:
+      repo: meshery-operator

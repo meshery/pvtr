@@ -1,0 +1,71 @@
+header:
+  schema-version: 2.0.0
+  last-updated: '2025-01-01'
+  last-reviewed: '2025-01-01'
+  url: https://github.com/meshery/pvtr/blob/master/.github/security-insights.yml
+  comment: |
+    This file contains the security insights information for the Meshery project.
+project:
+  name: meshery
+  administrators:
+    - name: Lee Calcote 
+      affiliation: Layer5
+      email: lee.calcote@layer5.io
+      primary: true
+    - name: Sangram Rath 
+      affiliation: Meshery
+      email: sangram.rath@gmail.com
+      primary: false
+  documentation:
+    quickstart-guide: https://github.com/meshery/meshery/blob/master/README.md
+    detailed-guide: https://github.com/meshery/meshery/blob/master/README.md
+    code-of-conduct: https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md
+  repositories:
+    - name: meshery
+      url: https://github.com/meshery/meshery
+      comment: |
+        Meshery, the cloud native manager.
+    - name: meshery-kuma
+      url: https://github.com/meshery/meshery-kuma
+      comment: |
+        Meshery adapter for Kuma.
+    - name: meshery-linkerd
+      url:  https://github.com/meshery/meshery-linkerd
+      comment: |
+        Meshery adapter for Linkerd.
+    - name: meshery-consul
+      url: https://github.com/meshery/meshery-consul
+      comment: |
+        Meshery adapter for Consul.
+    - name: meshery-operator
+      url: https://github.com/meshery/meshery-operator
+      comment: |
+        Meshery operator.
+    - name: schemas
+      url: https://github.com/meshery/schemas
+      comment: |
+        Meshery schemas.
+    - name: meshkit
+      url:  https://github.com/meshery/meshkit
+      comment: |
+        Meshery toolkit.
+    - name: meshsync
+      url: https://github.com/meshery/meshsync
+      comment: |
+        Meshery sync.
+    - name: helm-kanvas-snapshot
+      url: https://github.com/meshery/helm-kanvas-snapshot
+      comment: |
+        Helm Kanvas snapshot.
+    - name: meshery.io
+      url: https://github.com/meshery/meshery.io
+      comment: |
+        Meshery website.
+  vulnerability-reporting:
+    reports-accepted: true
+    bug-bounty-available: false
+    contact:
+      name: The security team at Layer5 provides security support for this project.
+      email: lee.calcote@layer5.io
+      primary: true
+    security-policy: https://github.com/meshery/meshery/blob/master/SECURITY.md
