@@ -14,7 +14,7 @@ on:
 jobs:
   email-meshery-release-notes-workflow:
     name: Email Meshery Release Notes
-    uses: layer5labs/meshery-extensions-packages/.github/workflows/notify-email.yml@master
+    uses: mesherylabs/meshery-extensions-packages/.github/workflows/notify-email.yml@master
     secrets: 
       token: ${{ secrets.GH_ACCESS_TOKEN }}
       MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}

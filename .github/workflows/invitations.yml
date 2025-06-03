@@ -11,10 +11,10 @@ jobs:
       - name: Invite on label
         uses: vj-abigo/invite-on-label@v1.2
         with:
-          organization: layer5io
+          organization: mesheryio
           label: issue/invite
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          comment: "We are sending you an invitation to join the Layer5 GitHub Organization. :partying_face: <b>Welcome to the community! 🎉</b><br /><br />&nbsp;&nbsp;&nbsp;Be sure to :star: [star the projects](../stargazers), if you haven't already.<br />"
+          comment: "We are sending you an invitation to join the meshery GitHub Organization. :partying_face: <b>Welcome to the community! 🎉</b><br /><br />&nbsp;&nbsp;&nbsp;Be sure to :star: [star the projects](../stargazers), if you haven't already.<br />"
         env:
           INVITE_TOKEN: ${{ secrets.RELEASE_NOTES_PAT }}
 
@@ -37,5 +37,5 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: pullreminders/slack-action@master
         with:
-          args: '{\"channel\":\"CF9RK4H89\",\"text\":\"An invitation to join the layer5io GitHub org has been sent\"}'
+          args: '{\"channel\":\"CF9RK4H89\",\"text\":\"An invitation to join the mesheryio GitHub org has been sent\"}'
           # to the author of: ${{env.URL}}\"}'

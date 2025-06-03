@@ -106,7 +106,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run Performance Tests
-        uses: layer5io/meshery-smp-action@master
+        uses: mesheryio/meshery-smp-action@master
         with:
           provider_token: ${{ secrets.PROVIDER_TOKEN }}
           platform: ${{ matrix.platform }}
@@ -122,7 +122,7 @@ jobs:
         shell: '/bin/bash {0}'
 
       - name: Apply Pattern
-        uses: layer5io/meshery-service-mesh-patterns-action@master
+        uses: mesheryio/meshery-service-mesh-patterns-action@master
         with:
           provider_token: ${{ secrets.PROVIDER_TOKEN }}
           platform: ${{ matrix.platform }}
@@ -160,7 +160,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Run Performance Tests
-        uses: layer5io/meshery-smp-action@master
+        uses: mesheryio/meshery-smp-action@master
         with:
           provider_token: ${{ secrets.PROVIDER_TOKEN }}
           platform: ${{ matrix.platform }}
@@ -175,21 +175,21 @@ jobs:
         shell: '/bin/bash {0}'
 
       # - name: Apply BookInfo Pattern
-      #   uses: layer5io/mesheryctl-service-mesh-patterns-action@master
+      #   uses: mesheryio/mesheryctl-service-mesh-patterns-action@master
       #   with:
       #     provider_token: ${{ secrets.PROVIDER_TOKEN }}
       #     platform: ${{ matrix.platform }}
       #     pattern_url: https://raw.githubusercontent.com/service-mesh-patterns/service-mesh-patterns/master/samples/bookInfoPattern.yaml
 
       - name: Apply Kubernetes Metrics Service Pattern
-        uses: layer5io/mesheryctl-service-mesh-patterns-action@master
+        uses: mesheryio/mesheryctl-service-mesh-patterns-action@master
         with:
           provider_token: ${{ secrets.PROVIDER_TOKEN }}
           platform: ${{ matrix.platform }}
           pattern_url: https://raw.githubusercontent.com/meshery/meshery.io/master/catalog/57f7230d-015b-4892-9042-cd1ea97fcb30.yaml
 
       - name: Load "Serve An LLM With Multiple GPUs In GKE" design
-        uses: layer5io/mesheryctl-service-mesh-patterns-action@master
+        uses: mesheryio/mesheryctl-service-mesh-patterns-action@master
         with:
           provider_token: ${{ secrets.PROVIDER_TOKEN }}
           platform: ${{ matrix.platform }}

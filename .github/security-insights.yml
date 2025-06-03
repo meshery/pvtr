@@ -9,8 +9,8 @@ project:
   name: meshery
   administrators:
     - name: Lee Calcote 
-      affiliation: Layer5
-      email: lee.calcote@layer5.io
+      affiliation: meshery
+      email: lee.calcote@meshery.io
       primary: true
     - name: Sangram Rath 
       affiliation: Meshery
@@ -65,7 +65,7 @@ project:
     reports-accepted: true
     bug-bounty-available: false
     contact:
-      name: The security team at Layer5 provides security support for this project.
-      email: lee.calcote@layer5.io
+      name: The security team at meshery provides security support for this project.
+      email: lee.calcote@meshery.io
       primary: true
     security-policy: https://github.com/meshery/meshery/blob/master/SECURITY.md

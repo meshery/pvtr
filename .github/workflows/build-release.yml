@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - name: trigger plugins for edge
-      uses: layer5io/trigger-remote-provider-action@master
+      uses: mesheryio/trigger-remote-provider-action@master
       with:
         name: "Build and Rollout Kanvas"
-        repo: layer5labs/meshery-extensions-packages
+        repo: mesherylabs/meshery-extensions-packages
         token: ${{ secrets.GH_ACCESS_TOKEN }}
